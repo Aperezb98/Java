@@ -3,7 +3,17 @@ public class ArrayBidimensional {
 
 	public static void main(String[] args) {
 		
-		int matriz [][]=new int[4][5];
+		int matriz[][]= 
+		{
+			{5,4,3,2,1},
+			{6,7,8,9,10},
+			{11,12,13,14,15},
+			{16,17,18,19,20}
+				
+		};
+		
+		/*OPCION 2 PARA CREAR ARRAYS BIDIMENSIONALES
+		 * int matriz [][]=new int[4][5];
 			matriz[0][0]= 4;
 			matriz[0][1]= 25;
 			matriz[0][2]= 45;
@@ -26,13 +36,19 @@ public class ArrayBidimensional {
 			matriz[3][1]= 62;
 			matriz[3][2]= 34;
 			matriz[3][3]= 232;
-			matriz[3][4]= 3;
+			matriz[3][4]= 3; */
 		
 		for(int i=0;i<matriz.length;i++) {
 			System.out.println("Datos de matriz en la posicion-->"+(i+1));
 				for(int j=0;j<matriz.length;j++) {
 					System.out.println(matriz[i][j]);
 				}
+		}
+		for(int elemento[]:matriz) {
+			System.out.println();
+				for(int datos:elemento) {
+					System.out.print(datos);
+			}
 		}
 		
 	}
